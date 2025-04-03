@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="c2.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="index.html" class="nav-button">Logout</a>
+        <a href="profile.html" class="nav-button">Profile</a>
+    </nav>
+
+    <div class="welcome-message">
+        <h1>Welcome to Edu Bro!</h1>
+        <p>We are thrilled to have you here. Explore our collection of Voice Notes, Video Content, and Study Materials crafted to enrich your learning experience.</p>
+    </div>
+
+    <div class="categories-container">
+        <h2>Select a Category</h2>
+
+        <!-- Voice Notes -->
+        <div class="category-card" onclick="redirectTo('h3.html')">
+            <img src="voice image.webp" alt="Voice Notes" class="category-image">
+            <h3>Voice Notes</h3>
+            <p>Listen to audio notes designed to enhance your understanding.</p>
+        </div>
+
+        <!-- Video Content -->
+        <div class="category-card" onclick="redirectTo('h4.html')">
+            <img src="videoimage.jpg" alt="Video Content" class="category-image">
+            <h3>Video Content</h3>
+            <p>Watch engaging videos that simplify complex topics.</p>
+        </div>
+
+        <!-- Study Materials -->
+        <div class="category-card" onclick="redirectTo('h5.html')">
+            <img src="study materials image.jpg" alt="Study Materials" class="category-image">
+            <h3>Study Materials</h3>
+            <p>Download comprehensive study notes for all levels.</p>
+        </div>
+    </div>
+
+    <script src="j1.js"></script>
+</body>
+</html>

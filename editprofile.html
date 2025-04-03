@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="editprofile.css">
+</head>
+<body>
+    <div class="edit-profile-container">
+        <h1>Edit Profile</h1>
+        <form id="editProfileForm">
+            <!-- Username Input -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+
+            <!-- Progress Input -->
+            <label for="progress">Progress (%):</label>
+            <input type="number" id="progress" placeholder="Enter your progress" min="0" max="100" required>
+
+            <!-- Save Button -->
+            <button type="submit" class="save-button">Save Changes</button>
+        </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Pre-fill the form with existing data from localStorage
+        document.addEventListener('DOMContentLoaded', () => {
+            const storedUsername = localStorage.getItem('username') || '';
+            const storedProgress = localStorage.getItem('progress') || 0;
+
+            document.getElementById('username').value = storedUsername;
+            document.getElementById('progress').value = storedProgress;
+        });
+
+        // Save the updated data to localStorage and redirect to profile.html
+        document.getElementById('editProfileForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+
+            const updatedUsername = document.getElementById('username').value;
+            const updatedProgress = document.getElementById('progress').value;
+
+            // Save updated values to localStorage
+            localStorage.setItem('username', updatedUsername);
+            localStorage.setItem('progress', updatedProgress);
+
+            // Redirect to profile.html
+            window.location.href = 'profile.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant gradient background */
+}
+
+/* Edit Profile Container */
+.edit-profile-container {
+    text-align: center;
+    background-color: #ffffff; /* White background */
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Heading Styling */
+.edit-profile-container h1 {
+    font-size: 2.5rem;
+    color: #2575fc; /* Blue heading color */
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    color: #333333; /* Dark text color */
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 10px auto 20px auto; /* Spacing between inputs */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners for inputs */
+    border: 2px solid #ddd; /* Light gray border */
+}
+
+/* Save Button Styling */
+.save-button {
+    background-color: #4caf50; /* Green button color */
+    color: white; /* White text color */
+    padding: 12px 25px; /* Button size */
+    border-radius: 8px; /* Rounded corners for button */
+}
+
+.save-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.save-button:active {
+    background-color: #3e8e41; /* Even darker green on click */
+}
