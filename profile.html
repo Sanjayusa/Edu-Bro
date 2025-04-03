@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Profile</h1>
+        <!-- Display Username -->
+        <p id="userName">User Name: <span id="name"></span></p>
+
+        <!-- Progress Section -->
+        <h2>Current Progress</h2> <!-- Added heading for progress -->
+        <div class="progress-wrapper">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <span id="progress-text"></span>
+        </div>
+
+        <!-- Edit Profile Button -->
+        <a href="editprofile.html" class="edit-profile-button">Edit Profile</a>
+        <a href="h2.html" class="edit-profile-button">Back</a>
+    </div>
+
+    <!-- JavaScript for fetching username and progress -->
+    <script>
+        // Retrieve username and progress from localStorage
+        const username = localStorage.getItem('username') || 'Guest'; // Default to 'Guest' if no username
+        const progress = localStorage.getItem('progress') || 0;
+
+        // Display username and progress
+        document.getElementById('name').innerText = username;
+        document.getElementById('progress-text').innerText = `${progress}%`;
+
+        // Animate progress bar
+        const progressFill = document.getElementById('progress-fill');
+        progressFill.style.width = `${progress}%`;
+    </script>
+</body>
+</html>

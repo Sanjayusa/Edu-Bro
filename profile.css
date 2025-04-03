@@ -1,0 +1,94 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7eb3, #8e44ad);
+}
+
+/* Grid Layout for Profile Section */
+.profile-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns: Profile section and button */
+    gap: 20px; /* Space between columns */
+    align-items: center;
+}
+
+/* Profile Container Styling */
+.profile-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* User Name */
+#userName {
+    font-size: 24px;
+}
+
+/* Progress Bar Wrapper */
+.progress-wrapper {
+    margin-top: 20px;
+}
+
+/* Progress Bar Container */
+.progress-bar {
+    width: 300px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 12.5px;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* Animated Progress Fill */
+.progress-fill {
+    height: 100%;
+    width: 0%; /* Initial width for animation */
+    background-color: #4caf50; /* Green fill color */
+    animation: fillProgress 2s ease-in-out forwards; /* Smooth animation */
+}
+
+/* Keyframes for Progress Animation */
+@keyframes fillProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--progress-width); /* Dynamic width based on progress */
+    }
+}
+
+/* Progress Text */
+#progress-text {
+    font-size: 18px;
+}
+
+/* Unique Profile Button Styling */
+.edit-profile-button {
+    display: inline-block; /* Makes the anchor behave like a button */
+    padding: 15px 30px; /* Adds padding for size */
+    background-image: linear-gradient(45deg, #ff5722, #ff9800); /* Gradient background */
+    color: white; /* White text color */
+    font-size: 18px; /* Font size for readability */
+    text-align: center; /* Centers text inside the button */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 50px; /* Fully rounded corners for a pill-shaped look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover animation */
+}
+
+.edit-profile-button:hover {
+    transform: scale(1.1); /* Enlarges button slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adds deeper shadow on hover */
+}
+
+.edit-profile-button:active {
+    transform: scale(0.95); /* Shrinks slightly when clicked for "pressed" effect */
+}
