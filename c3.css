@@ -1,0 +1,75 @@
+/* General Body Styling */
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #f4f4f9; /* Light gray background */
+   margin: 0;
+   padding: 0;
+}
+
+/* Navigation Bar Styling */
+.main-nav {
+   display: flex;
+   justify-content: flex-end; /* Align navigation to the right */
+   padding: 10px 20px;
+   background-color: #333; /* Dark background for nav bar */
+}
+
+.nav-button {
+   display: inline-block;
+   padding: 10px 20px; /* Adjust padding for button size */
+   margin-left: 10px; /* Space between buttons */
+   background-color: #6a11cb; /* Purple background */
+   color: white; /* White text color */
+   text-decoration: none; /* Remove underline from link */
+   border-radius: 5px; /* Slightly rounded corners */
+   font-size: 1rem; /* Font size */
+   font-weight: bold; /* Bold text */
+   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-button:hover {
+   background-color: #2575fc; /* Blue hover effect */
+}
+
+/* Categories Container Styling */
+.categories-container {
+   display: flex;
+   flex-direction: column; /* Stack items vertically (sequential layout) */
+   align-items: center; /* Center items horizontally */
+   gap: 20px; /* Space between cards */
+   padding: 20px;
+}
+
+.categories-container h2 {
+   width: 100%; /* Full width heading above cards */
+   text-align: center;
+   font-size: 2rem;
+   color: #333; /* Dark gray text for heading */
+}
+
+/* Category Card Styles */
+.category-card {
+   width: 300px;
+   padding: 20px;
+   text-align: center;
+   background-color: white;
+   border-radius: 10px; /* Rounded corners for cards */
+   box-shadow: 0px 5px 15px rgba(0,0,0,0.2); /* Shadow effect for depth */
+   cursor: pointer;
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect transitions */
+}
+
+.category-card:hover {
+  background-color: #6a11cb; /* Purple hover effect for card background */
+  color:white; /* Change text color to white on hover */
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.4); /* Enhanced shadow on hover for depth effect */
+}
+
+/* Image Styling Inside Cards */
+.category-image {
+  width: 100%; 
+  height:auto; 
+  border-radius :8px ;  
+  margin-bottom :15 px ;
+}

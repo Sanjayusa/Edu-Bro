@@ -1,0 +1,74 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('backround2.avif'); /* Background image URL */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Container Styling */
+.login-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for better visibility over the background */
+    padding: 40px; /* Increased padding for spacing */
+    border-radius: 10px;
+    border: 6px solid #2575fc; /* Broader border for better visibility */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+
+    /* Initial Animation Properties */
+    opacity: 0; /* Initially invisible */
+}
+
+/* Fast Fade-in and Slide-down Animation */
+@keyframes fastFadeInSlideDown {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(-200px); /* Start above the frame */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+/* Apply Animation on Page Load */
+.login-container.animate {
+    animation: fastFadeInSlideDown 0.8s ease-out forwards; /* Faster animation duration and easing */
+}
+
+/* Heading Styling Inside Login Container */
+.login-container h1 {
+    font-size: 3rem; /* Larger font size for better visibility */
+    color: #2575fc; /* Blue color for heading */
+}
+
+/* Input Field Styling */
+.login-container input {
+    display: block;
+    width: 85%; /* Slightly wider input fields */
+    margin: 15px auto; /* Increased margin for spacing between inputs */
+    padding: 15px; /* Increased padding inside input fields */
+    border-radius: 8px; /* Rounded corners for input fields */
+    border: 3px solid #ddd; /* Increased border thickness for inputs */
+    font-size: 1.2rem; /* Increased font size for input text */
+}
+
+/* Button Styling with Hover Effect */
+.login-container button {
+    background-color: #6a11cb; /* Purple color for button */
+    color: white; /* White text color */
+    padding: 12px 25px; /* Adjusted padding for larger buttons */
+    border-radius: 8px; /* Rounded corners for buttons */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.login-container button:hover {
+    background-color: blue; /* Blue hover effect for button */
+}

@@ -1,0 +1,64 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styling */
+.main-nav {
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
+    padding: 10px 20px;
+    background-color: #333; /* Dark background for nav bar */
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for button size */
+    margin-left: 10px; /* Space between buttons */
+    background-color: #6a11cb; /* Purple background */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-button:hover {
+    background-color: #2575fc; /* Blue hover effect */
+}
+
+/* Content Container Styling */
+.content-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically (sequential layout) */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between videos */
+    padding: 20px;
+}
+
+.content-container h2 {
+    width: 100%; /* Full width heading above videos */
+    text-align: center;
+    font-size: 2rem;
+    color: #333; /* Dark gray text for heading */
+}
+
+/* Video Styling */
+video {
+    width: 75%; /* Increase width to 75% of the screen for alignment */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Optional border around videos */
+    border-radius: 5px; /* Rounds corners of videos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Responsive Design for Smaller Screens (Mobile) */
+@media (max-width:768px) {
+   video {
+       width :90%;/* Increase width to fit smaller screens */ 
+}
+}
